@@ -25,28 +25,21 @@
 
     #paper {
       height: 90vh;
-      padding: 20px;
+      padding: 20px 20px 20px 50px; /* space for left margin */
       line-height: 27px;
-      background: repeating-linear-gradient(
-        to bottom,
-        #fff,
-        #fff 24px,
-        #ccc 25px
-      );
-      color: #000;
       font-size: 16px;
-      overflow-y: auto;
       white-space: pre-wrap;
       outline: none;
+      overflow-y: auto;
+      background: 
+        linear-gradient(to right, #e06666 40px, transparent 40px), /* red margin */
+        repeating-linear-gradient(to bottom, #fff, #fff 24px, #ccc 25px); /* ruled lines */
     }
 
     body.dark #paper {
-      background: repeating-linear-gradient(
-        to bottom,
-        #1e1e1e,
-        #1e1e1e 24px,
-        #444 25px
-      );
+      background: 
+        linear-gradient(to right, #e06666 40px, transparent 40px),
+        repeating-linear-gradient(to bottom, #1e1e1e, #1e1e1e 24px, #444 25px);
       color: #fff;
     }
 
